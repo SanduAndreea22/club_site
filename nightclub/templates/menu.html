@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-category {
+            margin-bottom: 20px;
+        }
+        .menu-category h2 {
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <!-- Aici poți afișa meniul de băuturi și gustări -->
+    <div class="menu-category">
+        <h2>Băuturi</h2>
+        <ul>
+            {% for bautura in meniu.bauturi %}
+                <li class="menu-item">{{ bautura }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h2>Gustări</h2>
+        <ul>
+            {% for gustare in meniu.gustari %}
+                <li class="menu-item">{{ gustare }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

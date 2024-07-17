@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .event {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <!-- Aici poți itera prin evenimente folosind variabilele furnizate din Django -->
+    {% for eveniment in evenimente %}
+        <div class="event">
+            <h2>{{ eveniment.titlu }}</h2>
+            <p><strong>Data:</strong> {{ eveniment.data }}</p>
+            <p><strong>Ora:</strong> {{ eveniment.ora }}</p>
+            <p><strong>Pret bilet:</strong> {{ eveniment.pret_bilet }}</p>
+            <p><strong>DJ/Artiști invitați:</strong> {{ eveniment.dj_artisti_invitati }}</p>
+            <p>{{ eveniment.descriere }}</p>
+            <!-- Alte detalii despre eveniment -->
+    {% endfor %}
+</body>
+</html>

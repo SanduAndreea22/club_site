@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Despre Noi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .club-image {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Despre Noi</h1>
+
+    <h2>Istoricul Clubului</h2>
+    <p>White Angel Bar and Restaurant a fost fondat în București în anul 2022, de către pasionați ai gastronomiei și ospitalității. Ideea a pornit din dorința de a crea un spațiu unic, unde oamenii să se bucure de experiențe culinare rafinate și de atmosfera prietenoasă. De-a lungul anilor, am crescut și ne-am dezvoltat, devenind un loc iubit și apreciat de comunitatea noastră.</p>
+
+    <img class="club-image" src="{% static 'images/white-angel-bar-and-restaurant.jpg' %}" alt="White Angel Bar and Restaurant">
+
+    <h2>Misiunea și Viziunea</h2>
+    <p>La White Angel, ne-am asumat misiunea de a oferi o experiență gastronomică și de divertisment de neegalat, combinând eleganța și rafinamentul cu o ambianță prietenoasă și primitoare. Viziunea noastră este de a deveni locul preferat pentru întâlniri sociale, evenimente speciale și momente de relaxare cu familia și prietenii.</p>
+
+    <h2>Informații Despre Proprietar/Manager</h2>
+    <p>La White Angel, suntem mândri să avem la conducere pe Cosmin Marin, un expert în industria ospitalității cu o vastă experiență în gestionarea și dezvoltarea localurilor de succes. Cu o pasiune profundă pentru satisfacția clienților și o viziune orientată către excelență, Cosmin Marin și echipa sa sunt dedicați să ofere cele mai bune experiențe posibile într-un mediu elegant și prietenos.</p>
+</body>
+</html>
+
+
+
+
+
